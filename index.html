@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="root">
+        <div class="currentPlayer">
+            <span style="color:rgb(78, 230, 18);">Сейчас ходит <span id="currentPl">X</span></span>
+        </div>
+
+        <div class="gameResult">
+            <span style="color: rgb(78, 230, 18);">Результат игры:</span>
+            <br>
+            <span id="whoWins"></span>
+        </div>
+
+        <div style="color: rgb(20, 250, 173);" class="gameHistory">История игры:
+            <div id="roundHistory"></div><br>
+        </div>
+
+        <div id="area"></div>
+
+        <div class="stat">
+            <table>
+                <th colspan="2">Статистика</th>
+                <tr>
+                    <td>Победы X</td>
+                    <td id="sX">
+                        <span>0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Победы O</td>
+                    <td id="sO">
+                        <span>0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ничьи</td>
+                    <td id="sD">
+                        <span>0</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
